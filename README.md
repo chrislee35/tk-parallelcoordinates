@@ -95,21 +95,6 @@ Great, so what options can Tk::ParallelCoordinates models take?
 	ifmt             # the parsing string for date data
 	items            # items for a list, OR items to display in a range
 
-Now, how about that callback that I promised you?
-
-	class TkPC_Callback
-		def call(tuples)
-			tuples.each do |t|
-				puts t.join(" ")
-			end
-		end
-	end
-	
-	timeslide = Tk::Doubleslider.new( left_frame, :min => 0, :max => 100, :low => 90, :high => 100,
-		:cb => TkDS_Callback.new, :label => 'your love for TkDS')
-
-
-
 ## Contributing
 
 1. Fork it
