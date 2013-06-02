@@ -23,7 +23,8 @@ Gem::Specification.new do |spec|
 	
 #	spec.add_runtime_dependency "tk"
 	
-	#spec.signing_key   = "#{File.dirname(__FILE__)}/../gem-private_key.pem"
-	#spec.cert_chain    = ["#{File.dirname(__FILE__)}/../gem-public_cert.pem"]
+	spec.signing_key   = "#{File.dirname(__FILE__)}/../gem-private_key.pem"
+	spec.cert_chain    = ["#{File.dirname(__FILE__)}/../gem-public_cert.pem"]
+
 	spec.test_files       = `git ls-files -- {test,spec,features}/*`.split("\n")
 end
