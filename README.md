@@ -30,6 +30,7 @@ Or install it yourself as:
 Within a Tk project, you'll need to have a Window with a Frame to place the ParallelCoordinate within.  Here is an example with a few of the features turned on:
 
 	require 'tk'
+	require 'tk/parallelcoordinates'
 	
 	class TkPC_Callback
 		def call(tuples)
